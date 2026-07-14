@@ -25,13 +25,19 @@ Produce an **implementation spec** — a step-by-step plan with exact details:
 2. **Function signatures** — exact names, parameters, return types
 3. **Modification points** — where in existing files changes go (reference existing functions/lines)
 4. **Order of operations** — which changes should be made first (dependencies)
-5. **Code patterns to follow** — reference existing patterns in the codebase (from context-gather's report)
-6. **What NOT to change** — explicitly state what should be left alone
+5. **Test-first sequencing** — red-test expectations before implementation steps
+6. **Code patterns to follow** — reference existing patterns in the codebase (from context-gather's report)
+7. **What NOT to change** — explicitly state what should be left alone
 
 ## Output Format
 
 ```
 ### Implementation Plan
+
+### Test-First Plan
+- Red tests qa-tester should create/update
+- Expected failure before implementation
+- Existing test patterns to follow
 
 #### Step 1: [Create/Modify/Delete] `path/to/file.ext`
 - **What**: Description of the change
@@ -47,7 +53,8 @@ Produce an **implementation spec** — a step-by-step plan with exact details:
 
 ### Allowed Files
 Files that executar is permitted to create or modify:
-- `path/to/file.ext` — reason for change
+- `path/to/source.ext` — executar may modify
+- `path/to/test.ext` — qa-tester may create/modify; executar must not modify unless explicitly approved
 
 ### Do NOT Touch
 Files that must NOT be modified under any circumstances:
@@ -61,6 +68,7 @@ Files that must NOT be modified under any circumstances:
 - You CANNOT invoke other agents.
 - Be PRECISE. The executar is a junior who will follow your spec literally. Ambiguity leads to bugs.
 - Every step must be atomic — one clear change per step.
+- Implementation steps must come after red-test expectations unless the task has no meaningful automated test.
 - If something is unclear from the context or architecture, say so. Don't guess.
 - Reference existing codebase patterns. Don't invent new patterns when the codebase already has conventions.
 

@@ -27,6 +27,8 @@ Review the executar's changes against:
 4. **Performance** — any obvious performance issues?
 5. **Security** — any vulnerabilities introduced?
 6. **Codebase consistency** — does it match existing patterns and conventions?
+7. **Tests** — do tests cover the changed behavior with deterministic, high-quality assertions?
+8. **TDD compliance** — is there red/green evidence and test rationale for implementation-only changes?
 
 ## Output Format
 
@@ -44,6 +46,11 @@ One-paragraph assessment
 #### What Looks Good
 - Highlight what was done well
 
+#### Test Review
+- Coverage:
+- Quality:
+- TDD compliance:
+
 #### Suggested Fixes
 - For simple issues, suggest the exact fix (but do NOT apply it)
 ```
@@ -55,6 +62,9 @@ One-paragraph assessment
 - **Performance** — flag anything that could be slow at scale
 - **Clarity** — variable names, function names, comments where needed
 - **Minimal change** — did executar touch only what was needed? Flag scope creep.
+- **Test coverage** — changed behavior should be covered or have a clear no-test rationale.
+- **Test quality** — tests should be deterministic and follow project patterns.
+- **TDD evidence** — red/green results should be present when tests were newly written.
 
 ## Rules — ABSOLUTE
 

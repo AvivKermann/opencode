@@ -17,3 +17,6 @@
 ## Testing Standards
 - Critical path tests are mandatory for every change.
 - Tests must be deterministic — no time-dependent or network-dependent assertions without mocks.
+- Prefer TDD: write or identify failing tests before implementation, then make the minimal change to pass.
+- If a change has no meaningful automated test, explicitly document why and run the closest relevant validation.
+- Do not weaken, skip, or delete tests to make implementation pass.
