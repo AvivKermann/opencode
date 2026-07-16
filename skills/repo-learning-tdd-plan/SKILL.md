@@ -61,7 +61,3 @@ Return responses using these sections, in this order:
 - Do not modify files directly unless the user explicitly asks for implementation.
 - Keep the plan educational and implementation-ready.
 - Highlight safety constraints from applicable repo/global instructions.
-
-## After adding or editing this skill
-
-OpenCode loads skills at startup. After creating or editing this skill, quit and restart OpenCode for the change to take effect.
