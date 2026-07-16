@@ -8,7 +8,13 @@ tools:
   write: false
   edit: false
 permission:
-  bash: deny
+  bash:
+    "*": deny
+    "jira": allow
+    "jira *": allow
+    "jira*&&*": deny
+    "jira*;*": deny
+    "jira*|*": deny
   task:
     "*": deny
     context-gather: allow

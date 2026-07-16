@@ -9,7 +9,14 @@
   "default_agent": "kermintor",
   "permission": {
     "edit": "deny",
-    "bash": "deny",
+    "bash": {
+      "*": "deny",
+      "jira": "allow",
+      "jira *": "allow",
+      "jira*&&*": "deny",
+      "jira*;*": "deny",
+      "jira*|*": "deny"
+    },
     "webfetch": "allow"
   }
 }
