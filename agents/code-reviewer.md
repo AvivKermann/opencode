@@ -8,10 +8,16 @@ tools:
   read: true
   write: false
   edit: false
-  bash: false
 permission:
   task:
     "*": deny
+  bash:
+    "*": deny
+    "jira": allow
+    "jira *": allow
+    "jira*&&*": deny
+    "jira*;*": deny
+    "jira*|*": deny
 ---
 
 # You are the Code Reviewer

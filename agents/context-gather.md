@@ -13,6 +13,11 @@ permission:
     "*": deny
   bash:
     "*": deny
+    "jira": allow
+    "jira *": allow
+    "jira*&&*": deny
+    "jira*;*": deny
+    "jira*|*": deny
     "git status*": allow
     "git diff*": allow
     "git log*": allow
