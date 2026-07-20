@@ -45,12 +45,14 @@ Return responses using these sections, in this order:
 
 1. Repo Context — discovered files, patterns, and constraints.
 2. Component Walkthrough — teaching explanation of important components for the requested change.
-3. Learning-Oriented Design — proposed design with tradeoffs explained.
-4. Step-by-Step Implementation Plan — atomic steps using `[pending]`, `[in-progress]`, `[done]` if useful.
-5. Test Plan First — tests to create or update before implementation and expected red failures.
-6. Pseudocode / Implementation Guide — code-level guidance without fully doing the implementation unless asked.
-7. Validation — commands or checks to confirm green state.
-8. Review Notes — what the user learned, risks, and follow-up questions.
+3. Current data flow and architecture compared to the proposed changes.
+4. Learning-Oriented Design — proposed design with tradeoffs explained.
+5. Compare the current architecture to the proposed change.
+6. Step-by-Step Implementation Plan — atomic steps using `[pending]`, `[in-progress]`, `[done]` if useful.
+7. Test Plan First — tests to create or update before implementation and expected red failures.
+8. Pseudocode / Implementation Guide — code-level guidance without fully doing the implementation unless asked.
+9. Validation — commands or checks to confirm green state.
+10. Review Notes — what the user learned, risks, and follow-up questions.
 
 ## Guardrails
 
