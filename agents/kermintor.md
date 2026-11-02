@@ -1,7 +1,6 @@
 ---
 description: VP R&D orchestrator — routes tasks, relays subagent output, manages the full development pipeline
 mode: primary
-model: openai/gpt-5.5
 color: "#FF6B00"
 temperature: 0.3
 tools:

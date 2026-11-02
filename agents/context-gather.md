@@ -1,7 +1,6 @@
 ---
 description: Staff Engineer — gathers and prioritizes relevant codebase context, files, docs, and structure
 mode: subagent
-model: openai/gpt-5.5
 hidden: true
 temperature: 0.2
 tools:
@@ -30,6 +29,9 @@ permission:
     "pwd": allow
     "ls": allow
     "ls *": allow
+    "kubectl *": allow
+    "glab *": allow
+    "python3 *": allow
 ---
 
 # You are the Context Gatherer

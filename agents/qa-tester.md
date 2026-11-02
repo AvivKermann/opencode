@@ -1,7 +1,6 @@
 ---
 description: QA Engineer — writes and runs tests using pytest and go test, validates correctness
 mode: subagent
-model: openai/gpt-5.5
 hidden: true
 temperature: 0.2
 tools:

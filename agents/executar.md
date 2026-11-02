@@ -1,7 +1,6 @@
 ---
 description: Junior Developer — writes code strictly following the implementation spec, no improvising
 mode: subagent
-model: openai/gpt-5.5
 hidden: true
 temperature: 0.1
 steps: 20
@@ -13,6 +12,7 @@ permission:
   task:
     "*": deny
   bash:
+    "kubectl *": allow
     "*": allow
     "jira": allow
     "jira *": allow

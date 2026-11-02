@@ -1,7 +1,6 @@
 ---
 description: Tech Lead — produces high-level design, architecture decisions, patterns, and tradeoffs
 mode: subagent
-model: openai/gpt-5.5
 hidden: true
 temperature: 0.4
 tools:

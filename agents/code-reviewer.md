@@ -1,7 +1,6 @@
 ---
 description: Senior code reviewer — PR-style review focused on quality, correctness, performance. NEVER makes changes.
 mode: subagent
-model: openai/gpt-5.5
 hidden: true
 temperature: 0.1
 tools:

@@ -1,7 +1,6 @@
 ---
 description: Senior Developer — translates architecture into concrete, atomic implementation tasks with exact file paths and function signatures
 mode: subagent
-model: openai/gpt-5.5
 hidden: true
 temperature: 0.1
 tools:
