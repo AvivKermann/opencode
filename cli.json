@@ -10,7 +10,8 @@
     "./plugins/skills-sidebar/tui.tsx",
     "./plugins/notification/tui.ts",
     "./plugins/workmux-status/tui.ts",
-    "./plugins/tmux-tabs/tui.ts"
+    "./plugins/tmux-tabs/tui.ts",
+    "./plugins/spotify/tui.tsx"
   ],
   "diffs": {
     "wrap": "word"
@@ -23,5 +24,8 @@
     "scrollbar": false,
     "thinking": "hide"
   },
-  "animations": true
+  "animations": true,
+  "keybinds": {
+    "model.list": "<leader>shift+m"
+  }
 }

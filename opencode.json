@@ -15,6 +15,11 @@
             "action": "external_directory",
             "resource": "~/.config/**",
             "effect": "allow"
+        },
+        {
+          "action": "external_directory",
+          "resource": "~/workspace/zesty/*",
+          "effect": "allow"
         }
     ],
     "mcp": {
@@ -33,6 +38,10 @@
                 "disabled": true,
                 "type": "remote",
                 "url": "https://api.eu2.coralogix.com/mgmt/api/v1/mcp"
+            },
+            "context7": {
+              "type": "remote",
+              "url": "https://mcp.context7.com/mcp/oauth"
             }
         }
     }
